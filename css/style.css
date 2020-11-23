@@ -1,0 +1,160 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+
+
+/* Header */
+
+.main-header{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:1;
+}
+
+.main-header__title,
+.main-header__secondary-title {
+    color: white;
+}
+
+.main-header__title {
+    background-color: #C80000;
+    font-size: 3rem;
+    padding: 1rem;
+    margin: 0;
+}
+
+.main-header__subtitle {
+    font-size: 0.3em;
+}
+
+.main-header__secondary-title,
+.main-footer {
+    font-weight: 300;
+    margin: 0;
+    padding: 0.5rem;
+    text-align: center;
+    color: white;
+    background-color: #666666;
+}
+
+
+
+em {
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+
+/* Main Content */
+
+.main-content{
+    padding-top: 10rem;
+    max-width: 1080px;
+    margin: auto;
+}
+
+/* Product */
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    position: relative;
+    border: 1px #cccccc solid;
+    box-sizing: border-box;    /* Border box is used to include border and padding in the box */
+    width: calc(100%/3 - (0.5rem * 2));
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.product__image {
+    width: 100%;
+}
+
+.product__title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+}
+
+.product__category {
+    padding: 0.2rem;
+    display: block;
+    color: #666666;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    border-bottom: 1px solid #666666;
+    
+}
+
+.product__content {
+    margin: 0.5rem 0;
+    line-height: 1.3rem;
+}
+.product__cart {
+    text-decoration: none;
+    /* box-sizing: border-box; */
+    padding: 1rem;
+    margin-top: 1rem;
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    background-color: #C80000;
+    color: white;
+    font-weight: 300;
+    border: 1px solid #cccccc;
+    align-items: baseline;
+}
+
+
+.product__price {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.product__old-price {
+    font-size: 0.8rem;
+}
+
+
+.product__promo-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 700;
+    background-color: #666666;
+    border: 4px solid #cccccc;
+    border-radius: 100%;
+    width: 5rem;
+    height: 5rem;
+    text-align: center;
+    right: 8px;
+    top: 8px;
+}
+
+/* Solde Tag */
+.soldes-tag {
+    position: fixed;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    background-color: #C80000;
+    left: 0;
+    margin: 10em 0;
+    color: white;
+    letter-spacing: -2px;
+    padding: 1rem 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
